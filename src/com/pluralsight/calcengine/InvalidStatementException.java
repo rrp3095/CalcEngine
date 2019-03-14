@@ -1,5 +1,16 @@
 package com.pluralsight.calcengine;
 
-public class InvalidStatementException {
+public class InvalidStatementException extends Exception{
+
+
+    public InvalidStatementException(String reason, String statement) {
+
+        super(reason + ": " + statement);
+    }
+
+    public InvalidStatementException(String reason, String statement, Throwable casuse) {
+
+        super(reason + ": " + statement, casuse);
+    }
 
 }

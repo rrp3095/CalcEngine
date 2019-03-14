@@ -16,6 +16,9 @@ public class CalculateHelper {
     public void process(String statement){
 
         String[] parts = statement.split(" ");
+        if(parts.length != 3)
+            this new InvalidStatementException("Incorrect number of fields", statement);
+
         String commandString = parts[0];
         leftVal = Double.parseDouble(parts[1]);
         rightVal = Double.parseDouble(parts[2]);
