@@ -28,6 +28,8 @@ public class CalculateHelper {
             throw new InvalidStatementException("Non numeric data", statement,e);
         }
         setCommandFromString(commandString);
+        if(command == null)
+            throw new InvalidStatementException("Invalic commmand", statement);
 
         CalculateBase calculator = null;
 
