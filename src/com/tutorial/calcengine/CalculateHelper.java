@@ -1,4 +1,4 @@
-package com.pluralsight.calcengine;
+package com.tutorial.calcengine;
 
 public class CalculateHelper {
 
