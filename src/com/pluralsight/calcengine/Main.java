@@ -13,6 +13,9 @@ public class Main {
         //------------------------------
 
         String[] statements = {
+                "add 1.0",              //only one numeric data--handle error//
+                "add xx 25.0",          //one non numeric data               //
+                "addX 0.0 0.0",         //undefined operation addx           //
                 "divide 100.0 50.0",
                 "add 25.0 92.0",
                 "subtract 225.0 17.0",
