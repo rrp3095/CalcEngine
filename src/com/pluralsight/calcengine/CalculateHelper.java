@@ -13,11 +13,11 @@ public class CalculateHelper {
     double rightVal;
     double result;
 
-    public void process(String statement){
+    public void process(String statement) throws InvalidStatementException{
 
         String[] parts = statement.split(" ");
         if(parts.length != 3)
-            this new InvalidStatementException("Incorrect number of fields", statement);
+            throw new InvalidStatementException("Incorrect number of fields", statement);
 
         String commandString = parts[0];
 
