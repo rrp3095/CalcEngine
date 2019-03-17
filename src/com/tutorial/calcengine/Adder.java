@@ -29,6 +29,6 @@ public class Adder extends CalculateBase implements MathProcessing{
         setRightVal(rightVal);
         calculate();
 
-        return getResult();
+        return getResult() ;
     }
 }
