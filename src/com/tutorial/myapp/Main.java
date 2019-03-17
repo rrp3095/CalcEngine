@@ -6,6 +6,20 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //useCalculateHelper();
+
+        String[] statements {
+                "add 25.0 92.0",
+        };
+
+        for(String statement: statements){
+
+        }
+
+
+
+    }
+    static void useCalculateHelper(){
 //        MathEquation testEquation = new MathEquation();
 //        testEquation.excute();
 //        System.out.print("test =");
